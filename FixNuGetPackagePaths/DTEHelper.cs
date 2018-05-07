@@ -6,11 +6,16 @@ using MSBuild = Microsoft.Build.Evaluation;
 
 namespace FixNuGetPackagePaths
 {
+    internal abstract class ProjectKindsConstant
+    {
+        public const string vsProjectKindSolutionFolder = "{66A26720-8FB5-11D2-AA7E-00C04F688DDE}";
+    }
+
     public static class DteHelper
     {
         private static IEnumerable<EnvDTE.Project> GetProjects(EnvDTE.Project project)
         {
-            if (project.Kind == ProjectKinds.vsProjectKindSolutionFolder)
+            if (project.Kind == ProjectKindsConstant.vsProjectKindSolutionFolder)
             {
                 return project.ProjectItems
                     .Cast<EnvDTE.ProjectItem>()

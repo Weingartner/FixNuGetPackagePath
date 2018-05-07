@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<PackageManifest Version="2.0.0" xmlns="http://schemas.microsoft.com/developer/vsx-schema/2011" xmlns:d="http://schemas.microsoft.com/developer/vsx-schema-design/2011">
+<PackageManifest Version="3.0.0" xmlns="http://schemas.microsoft.com/developer/vsx-schema/2011" xmlns:d="http://schemas.microsoft.com/developer/vsx-schema-design/2011">
     <Metadata>
         <Identity Id="FixNuGetHintPath.1b193709-7fa7-46e9-af25-e3b7e1518f52" Version="0.2.2" Language="en-US" Publisher="Weingartner Maschinenbau GmbH" />
         <DisplayName>FixNuGetPackagePaths</DisplayName>
@@ -21,5 +21,6 @@
     <Prerequisites>
         <Prerequisite Id="Microsoft.VisualStudio.Component.Roslyn.LanguageServices" Version="[15.0.26208.0,16.0)" DisplayName="C# and Visual Basic" />
         <Prerequisite Id="Microsoft.Net.ComponentGroup.TargetingPacks.Common" DisplayName=".NET Framework 4 – 4.6 development tools" Version="[15.0.26208.0,16.0)" />
+		<Prerequisite Id="Microsoft.VisualStudio.Component.CoreEditor" Version="[15.0.25904.2,16.0)" DisplayName="Visual Studio core editor" />
     </Prerequisites>
 </PackageManifest>
